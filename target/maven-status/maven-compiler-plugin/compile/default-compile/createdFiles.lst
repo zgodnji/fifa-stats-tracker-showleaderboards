@@ -1,0 +1,6 @@
+com/zgodnji/fifastatstracker/GameResource.class
+com/zgodnji/fifastatstracker/Database.class
+com/zgodnji/fifastatstracker/GameProperties.class
+META-INF/services/javax.ws.rs.core.Application
+com/zgodnji/fifastatstracker/Game.class
+com/zgodnji/fifastatstracker/GameApplication.class

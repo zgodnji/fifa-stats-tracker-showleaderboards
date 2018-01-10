@@ -1,0 +1,17 @@
+kumuluzee:
+  name: games-service
+  env:
+    name: dev
+  version: 1.0.0
+  server:
+    base-url: http://localhost:8082
+    http:
+      port: 8082
+  config:
+    start-retry-delay-ms: 500
+    max-retry-delay-ms: 900000
+
+rest-config:
+  string-property: Monday
+  boolean-property: true
+  integer-property: 23

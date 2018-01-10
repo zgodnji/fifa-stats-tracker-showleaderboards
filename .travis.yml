@@ -1,0 +1,15 @@
+sudo: required
+
+services:
+  - docker
+
+language: java
+dist: trusty
+
+script:
+  - mvn clean package -U
+  - docker build -t ancina/showleaderboards .
+
+after_success:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push ancina/showleaderboards

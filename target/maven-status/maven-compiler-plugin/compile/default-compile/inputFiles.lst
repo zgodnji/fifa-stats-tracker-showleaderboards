@@ -1,5 +1,4 @@
-/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-games/src/main/java/com/zgodnji/fifastatstracker/GameProperties.java
-/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-games/src/main/java/com/zgodnji/fifastatstracker/GameApplication.java
-/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-games/src/main/java/com/zgodnji/fifastatstracker/Database.java
-/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-games/src/main/java/com/zgodnji/fifastatstracker/GameResource.java
-/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-games/src/main/java/com/zgodnji/fifastatstracker/Game.java
+/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-showleaderboards/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardProperties.java
+/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-showleaderboards/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardApplication.java
+/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-showleaderboards/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java
+/home/andraz/Documents/Racunalniske_storitve_v_oblaku/fifa-stats-tracker-showleaderboards/src/main/java/com/zgodnji/fifastatstracker/GamesHealthCheck.java

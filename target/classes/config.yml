@@ -1,15 +1,32 @@
 kumuluzee:
-  name: games-service
+  name: showleaderboard-service
   env:
     name: dev
   version: 1.0.0
   server:
-    base-url: http://localhost:8082
+    base-url: http://localhost:8085
     http:
-      port: 8082
+      port: 8085
   config:
     start-retry-delay-ms: 500
     max-retry-delay-ms: 900000
+  datasources:
+    - jndi-name: jdbc/CustomersDS
+      connection-url: jdbc:postgresql://localhost:5432/customers
+      username: postgres
+      password: postgres
+      max-pool-size: 20
+  health:
+    servlet:
+      mapping: /health
+      enabled: true
+    logs:
+      enabled: true
+      level: INFO
+      period-s: 30
+    checks:
+      disk-space-health-check:
+        threshold: 100000000
 
 rest-config:
   string-property: Monday

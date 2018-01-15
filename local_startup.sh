@@ -2,4 +2,4 @@
 
 mvn clean package
 
-java -jar target/showleaderboards-1.0.0.jar
+java -jar target/showLeaderboards-1.0.0.jar

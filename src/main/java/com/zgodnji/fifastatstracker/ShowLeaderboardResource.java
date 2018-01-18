@@ -1,6 +1,10 @@
 package com.zgodnji.fifastatstracker;
 
 import com.kumuluz.ee.discovery.annotations.DiscoverService;
+import com.kumuluz.ee.logs.cdi.Log;
+import com.kumuluz.ee.logs.cdi.LogParams;
+import org.eclipse.microprofile.metrics.Meter;
+import org.eclipse.microprofile.metrics.annotation.Metric;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
@@ -17,10 +21,12 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+
 @RequestScoped
-@Path("showleaderboards")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.TEXT_HTML)
+@Path("showleaderboards")
+@Log(LogParams.METRICS)
 public class ShowLeaderboardResource {
 
     @Inject
@@ -35,9 +41,21 @@ public class ShowLeaderboardResource {
     @DiscoverService(value = "users-service", environment = "dev", version = "1.0.0")
     private String usersUrlString;
 
+    @Inject
+    @Metric(name = "leaderboard_meter")
+    private Meter leaderboardMeter;
+
+    @GET
+    @Log(value = LogParams.METRICS, methodCall = false)
+    public Response showLeaderboards() {
+        return Response.noContent().build();
+    }
+
     @GET
     @Path("{gameId}")
     public Response showLeaderboard(@PathParam("gameId") String gameId) {
+
+        leaderboardMeter.mark();
 
         String html = "<!DOCTYPE html>\n" +
                 "<html lang=\"en\">\n" +

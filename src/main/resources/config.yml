@@ -21,12 +21,17 @@ kumuluzee:
       mapping: /health
       enabled: true
     logs:
-      enabled: true
+      enabled: false
       level: INFO
       period-s: 30
     checks:
       disk-space-health-check:
         threshold: 100000000
+  metrics:
+    servlet:
+      enabled: true
+      mapping: /metrics
+
 
 rest-config:
   string-property: Monday

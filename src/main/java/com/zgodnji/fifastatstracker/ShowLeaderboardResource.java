@@ -3,6 +3,8 @@ package com.zgodnji.fifastatstracker;
 import com.kumuluz.ee.discovery.annotations.DiscoverService;
 import com.kumuluz.ee.logs.cdi.Log;
 import com.kumuluz.ee.logs.cdi.LogParams;
+import com.zgodnji.fifastatstracker.beans.GamesBean;
+import org.eclipse.microprofile.faulttolerance.*;
 import org.eclipse.microprofile.metrics.Meter;
 import org.eclipse.microprofile.metrics.annotation.Metric;
 import org.json.simple.JSONArray;
@@ -51,6 +53,10 @@ public class ShowLeaderboardResource {
         return Response.noContent().build();
     }
 
+    @Inject
+    private GamesBean gamesBean;
+
+
     @GET
     @Path("{gameId}")
     public Response showLeaderboard(@PathParam("gameId") String gameId) {
@@ -68,33 +74,7 @@ public class ShowLeaderboardResource {
                 "        <div>\n" +
                 "            <h1>Leaderboard for ";
 
-        StringBuilder game = new StringBuilder();
-
-        try {
-            URL url = new URL(gamesUrlString + "/v1/games/" + gameId);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
-            conn.setRequestProperty("Accept", "application/json");
-            if (conn.getResponseCode() != 200) {
-                throw new RuntimeException("Failed : HTTP error code : "
-                        + conn.getResponseCode());
-            }
-            BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
-            String output;
-            while ((output = br.readLine()) != null) {
-                game.append(output);
-            }
-            conn.disconnect();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        Object objG = JSONValue.parse(game.toString());
-        JSONObject gameObj = (JSONObject) objG;
-
-        html += gameObj.get("title");
+        html += gamesBean.getGameTitle(gameId);
         html += "</h1>\n" +
                 "            <ol>\n";
 
@@ -166,4 +146,5 @@ public class ShowLeaderboardResource {
         // Get
         return Response.ok(html).build();
     }
+
 }

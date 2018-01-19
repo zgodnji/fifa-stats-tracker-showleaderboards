@@ -2,32 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43a62df3-d113-42c8-a704-340e69a124a7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_kumuluz_ee_logs_kumuluzee_logs_common_1_3_0_SNAPSHOT.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_kumuluz_ee_logs_kumuluzee_logs_log4j2_1_3_0_SNAPSHOT.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_3_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jcl_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jul_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/webapp/web.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_7_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/beans/GamesBean.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/games.iml" afterPath="$PROJECT_DIR$/games.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/GamesHealthCheck.java" afterPath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/GamesHealthCheck.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/GamesHealthCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/GamesHealthCheck.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/ShowLeaderboardResource.class" afterPath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/ShowLeaderboardResource.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/UserssHealthCheck.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/config.yml" afterPath="$PROJECT_DIR$/target/classes/config.yml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/slf4j-api-1.7.25.jar" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change beforePath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar" afterPath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar" />
-      <change beforePath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar.original" afterPath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar.original" />
+      <change beforePath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar.original" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,12 +32,10 @@
       <file leaf-file-name="ShowLeaderboardResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="36" />
+            <state relative-caret-position="792">
+              <caret line="61" column="72" lean-forward="false" selection-start-line="61" selection-start-column="72" selection-end-line="61" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1527#1528#0" expanded="true" />
-                <element signature="e#1578#1579#0" expanded="true" />
                 <element signature="method#showLeaderboard#0;class#ShowLeaderboardResource#0" expanded="false" />
               </folding>
             </state>
@@ -67,8 +55,8 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="630">
+              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -84,11 +72,111 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="95" column="21" lean-forward="false" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="51" />
+            <state relative-caret-position="432">
+              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GamesBean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/beans/GamesBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="System.class" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/System.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+              <folding>
+                <marker date="1508798582000" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1508798582000" expanded="false" signature="133:1145" ph="..." />
+                <marker date="1508798582000" expanded="true" signature="1544:1551" ph="{}" />
+                <marker date="1508798582000" expanded="true" signature="1600:1648" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="1698:1747" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="1797:1846" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="1884:2111" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="2177:2247" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="2283:2448" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="2690:2856" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="2943:3510" ph="{...}" />
+                <marker date="1508798582000" expanded="false" signature="3230:3300" ph="run() → {" />
+                <marker date="1508798582000" expanded="false" signature="3447:3466" ph="}" />
+                <marker date="1508798582000" expanded="false" signature="3566:3577" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="3593:3599" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="3971:4134" ph="{...}" />
+                <marker date="1508798582000" expanded="false" signature="4176:4187" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="4208:4214" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="4270:4543" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="4595:4802" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="4867:5080" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="5145:5395" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="5449:5688" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="5736:5954" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="6001:6223" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="6272:6484" ph="{...}" />
+                <marker date="1508798582000" expanded="false" signature="6523:6534" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="6566:6572" ph=" }" />
+                <marker date="1508798582000" expanded="false" signature="6601:6612" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="6638:6644" ph=" }" />
+                <marker date="1508798582000" expanded="false" signature="6686:6697" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="6736:6742" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="6748:6766" ph="/**...*/" />
+                <marker date="1508798582000" expanded="false" signature="6839:6850" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="6884:6890" ph=" }" />
+                <marker date="1508798582000" expanded="false" signature="6953:6964" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="7026:7032" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="7103:7188" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="7334:7652" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="7702:8561" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="8607:10832" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="8670:10824" ph="{...}" />
+                <marker date="1508798582000" expanded="false" signature="8734:8753" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="8783:8797" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="8901:8975" ph="{...}" />
+                <marker date="1508798582000" expanded="false" signature="9043:9062" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="9094:9108" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="9214:9285" ph="{...}" />
+                <marker date="1508798582000" expanded="false" signature="9350:9369" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="9401:9415" ph=" }" />
+                <marker date="1508798582000" expanded="false" signature="9484:9503" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="9539:9553" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="9630:9714" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="9797:9874" ph="{...}" />
+                <marker date="1508798582000" expanded="false" signature="9942:9961" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="9982:9996" ph=" }" />
+                <marker date="1508798582000" expanded="false" signature="10081:10100" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="10131:10145" ph=" }" />
+                <marker date="1508798582000" expanded="false" signature="10204:10223" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="10256:10270" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="10356:10427" ph="{...}" />
+                <marker date="1508798582000" expanded="false" signature="10483:10502" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="10532:10546" ph=" }" />
+                <marker date="1508798582000" expanded="false" signature="10632:10651" ph=" { " />
+                <marker date="1508798582000" expanded="false" signature="10681:10695" ph=" }" />
+                <marker date="1508798582000" expanded="true" signature="10766:10814" ph="{...}" />
+                <marker date="1508798582000" expanded="true" signature="10845:10984" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -140,14 +228,16 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/leaderboard.html" />
         <option value="$PROJECT_DIR$/local_startup.sh" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/GamesHealthCheck.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/UsersHealthCheck.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/LeaderboardsHealthCheck.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/UserssHealthCheck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/producers/HttpClientProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/beans/GamesBean.java" />
       </list>
     </option>
   </component>
@@ -164,11 +254,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="472" />
-    <option name="y" value="171" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="31" />
     <option name="width" value="946" />
-    <option name="height" value="1054" />
+    <option name="height" value="1081" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -187,9 +276,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +314,15 @@
               <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fifastatstracker" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,12 +337,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Samples/kumuluzee/kumuluzee-samples/kumuluzee-logs-log4j2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Samples/kumuluzee/kumuluzee-samples/kumuluzee-fault-tolerance-hystrix" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
@@ -255,6 +353,8 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zgodnji.fifastatstracker.beans" />
+      <recent name="com.zgodnji.fifastatstracker.producers" />
       <recent name="com.zgodnji.fifastatstracker" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -374,15 +474,16 @@
       <workItem from="1516009811249" duration="4831000" />
       <workItem from="1516302961821" duration="51000" />
       <workItem from="1516303382347" duration="1880000" />
-      <workItem from="1516305719195" duration="11485000" />
+      <workItem from="1516305719195" duration="16812000" />
+      <workItem from="1516323333766" duration="3276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20510000" />
+    <option name="totallyTimeSpent" value="29113000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="0" width="1890" height="1081" extended-state="6" />
+    <frame x="31" y="0" width="946" height="1081" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -399,7 +500,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3601695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41737288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -456,18 +557,52 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/beans/GamesBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
             <element signature="method#showLeaderboard#0;class#ShowLeaderboardResource#0" expanded="false" />
           </folding>
         </state>
@@ -485,9 +620,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -505,8 +638,6 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="27" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
             <element signature="method#showLeaderboard#0;class#ShowLeaderboardResource#0" expanded="false" />
           </folding>
         </state>
@@ -524,9 +655,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -544,8 +673,6 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="27" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
             <element signature="method#showLeaderboard#0;class#ShowLeaderboardResource#0" expanded="false" />
           </folding>
         </state>
@@ -563,9 +690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,8 +708,6 @@
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
             <element signature="method#showLeaderboard#0;class#ShowLeaderboardResource#0" expanded="false" />
           </folding>
         </state>
@@ -695,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local_startup.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -757,51 +872,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/UsersHealthCheck.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/LeaderboardsHealthCheck.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/UserssHealthCheck.java" />
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="method#showLeaderboard#0;class#ShowLeaderboardResource#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/UsersHealthCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="210">
+          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/LeaderboardsHealthCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/UserssHealthCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/producers/HttpClientProducer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/GamesHealthCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -810,11 +892,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="61" column="72" lean-forward="false" selection-start-line="61" selection-start-column="72" selection-end-line="61" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#showLeaderboard#0;class#ShowLeaderboardResource#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="95" column="21" lean-forward="false" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="51" />
+        <state relative-caret-position="432">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/System.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <marker date="1508798582000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1508798582000" expanded="false" signature="133:1145" ph="..." />
+            <marker date="1508798582000" expanded="true" signature="1544:1551" ph="{}" />
+            <marker date="1508798582000" expanded="true" signature="1600:1648" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="1698:1747" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="1797:1846" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="1884:2111" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="2177:2247" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="2283:2448" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="2690:2856" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="2943:3510" ph="{...}" />
+            <marker date="1508798582000" expanded="false" signature="3230:3300" ph="run() → {" />
+            <marker date="1508798582000" expanded="false" signature="3447:3466" ph="}" />
+            <marker date="1508798582000" expanded="false" signature="3566:3577" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="3593:3599" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="3971:4134" ph="{...}" />
+            <marker date="1508798582000" expanded="false" signature="4176:4187" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="4208:4214" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="4270:4543" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="4595:4802" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="4867:5080" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="5145:5395" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="5449:5688" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="5736:5954" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="6001:6223" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="6272:6484" ph="{...}" />
+            <marker date="1508798582000" expanded="false" signature="6523:6534" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="6566:6572" ph=" }" />
+            <marker date="1508798582000" expanded="false" signature="6601:6612" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="6638:6644" ph=" }" />
+            <marker date="1508798582000" expanded="false" signature="6686:6697" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="6736:6742" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="6748:6766" ph="/**...*/" />
+            <marker date="1508798582000" expanded="false" signature="6839:6850" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="6884:6890" ph=" }" />
+            <marker date="1508798582000" expanded="false" signature="6953:6964" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="7026:7032" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="7103:7188" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="7334:7652" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="7702:8561" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="8607:10832" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="8670:10824" ph="{...}" />
+            <marker date="1508798582000" expanded="false" signature="8734:8753" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="8783:8797" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="8901:8975" ph="{...}" />
+            <marker date="1508798582000" expanded="false" signature="9043:9062" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="9094:9108" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="9214:9285" ph="{...}" />
+            <marker date="1508798582000" expanded="false" signature="9350:9369" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="9401:9415" ph=" }" />
+            <marker date="1508798582000" expanded="false" signature="9484:9503" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="9539:9553" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="9630:9714" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="9797:9874" ph="{...}" />
+            <marker date="1508798582000" expanded="false" signature="9942:9961" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="9982:9996" ph=" }" />
+            <marker date="1508798582000" expanded="false" signature="10081:10100" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="10131:10145" ph=" }" />
+            <marker date="1508798582000" expanded="false" signature="10204:10223" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="10256:10270" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="10356:10427" ph="{...}" />
+            <marker date="1508798582000" expanded="false" signature="10483:10502" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="10532:10546" ph=" }" />
+            <marker date="1508798582000" expanded="false" signature="10632:10651" ph=" { " />
+            <marker date="1508798582000" expanded="false" signature="10681:10695" ph=" }" />
+            <marker date="1508798582000" expanded="true" signature="10766:10814" ph="{...}" />
+            <marker date="1508798582000" expanded="true" signature="10845:10984" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/beans/GamesBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

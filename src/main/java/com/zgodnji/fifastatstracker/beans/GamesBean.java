@@ -28,13 +28,14 @@ public class GamesBean {
     @CircuitBreaker
     @Fallback(fallbackMethod = "getGameTitleFallback")
     @CommandKey("http-find-game")
-    @Timeout(value = 2, unit = ChronoUnit.SECONDS)
+    @Timeout(value = 10, unit = ChronoUnit.SECONDS)
     public String getGameTitle(String gameId) {
 
         StringBuilder game = new StringBuilder();
 
         try {
             URL url = new URL(gamesUrlString + "/v1/games/" + gameId);
+            System.out.println("Request to url: " + url);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
@@ -57,7 +58,7 @@ public class GamesBean {
 
         System.out.println("Going to sleep");
         try {
-            Thread.sleep(4000);
+            Thread.sleep(1000);
         } catch (Exception e) {
 
         }

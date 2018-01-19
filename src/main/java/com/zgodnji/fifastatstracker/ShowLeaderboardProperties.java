@@ -6,35 +6,18 @@ import com.kumuluz.ee.configuration.cdi.ConfigValue;
 import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-@ConfigBundle("rest-config")
+@ConfigBundle("monthly")
 public class ShowLeaderboardProperties {
 
     @ConfigValue(watch = true)
-    private String stringProperty;
-    private Boolean booleanProperty;
-    private Integer integerProperty;
+    private String gameOfTheMonth;
 
-    public String getStringProperty() {
-        return stringProperty;
+    public String getGameOfTheMonth() {
+        return gameOfTheMonth;
     }
 
-    public Boolean getBooleanProperty() {
-        return booleanProperty;
+    public void setGameOfTheMonth(String gameOfTheMonth) {
+        this.gameOfTheMonth = gameOfTheMonth;
     }
 
-    public Integer getIntegerProperty() {
-        return integerProperty;
-    }
-
-    public void setStringProperty(String stringProperty) {
-        this.stringProperty = stringProperty;
-    }
-
-    public void setBooleanProperty(boolean booleanProperty) {
-        this.booleanProperty = booleanProperty;
-    }
-
-    public void setIntegerProperty(int integerProperty) {
-        this.integerProperty = integerProperty;
-    }
 }

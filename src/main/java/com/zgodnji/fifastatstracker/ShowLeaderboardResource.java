@@ -4,8 +4,8 @@ import com.kumuluz.ee.discovery.annotations.DiscoverService;
 import com.kumuluz.ee.logs.cdi.Log;
 import com.kumuluz.ee.logs.cdi.LogParams;
 import com.zgodnji.fifastatstracker.beans.GamesBean;
-import org.eclipse.microprofile.faulttolerance.*;
 import org.eclipse.microprofile.metrics.Meter;
+import org.eclipse.microprofile.metrics.Timer;
 import org.eclipse.microprofile.metrics.annotation.Metric;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -47,6 +47,10 @@ public class ShowLeaderboardResource {
     @Metric(name = "leaderboard_meter")
     private Meter leaderboardMeter;
 
+    @Inject
+    @Metric(name = "leaderboard_timer")
+    private Timer leaderboardTimer;
+
     @GET
     @Log(value = LogParams.METRICS, methodCall = false)
     public Response showLeaderboards() {
@@ -56,6 +60,9 @@ public class ShowLeaderboardResource {
     @Inject
     private GamesBean gamesBean;
 
+
+    @Inject
+    private ShowLeaderboardProperties properties;
 
     @GET
     @Path("{gameId}")
@@ -73,10 +80,16 @@ public class ShowLeaderboardResource {
                 "    <div style=\"max-width: 900px; border: 1px black dashed; text-align: center\">\n" +
                 "        <div>\n" +
                 "            <h1>Leaderboard for ";
-
+        final Timer.Context context = leaderboardTimer.time();
         html += gamesBean.getGameTitle(gameId);
-        html += "</h1>\n" +
-                "            <ol>\n";
+        context.stop();
+        html += "</h1>\n";
+
+        if(properties.getGameOfTheMonth().equals(gameId)) {
+            html += "<h2>This is the game of the month!</h2>";
+        }
+
+        html += "            <ol>\n";
 
         StringBuilder response = new StringBuilder();
 
@@ -146,5 +159,6 @@ public class ShowLeaderboardResource {
         // Get
         return Response.ok(html).build();
     }
+
 
 }

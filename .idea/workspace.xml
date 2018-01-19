@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43a62df3-d113-42c8-a704-340e69a124a7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardProperties.java" afterPath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardProperties.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/beans/GamesBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/beans/GamesBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/ShowLeaderboardResource.class" afterPath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/ShowLeaderboardResource.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/beans/GamesBean.class" afterPath="$PROJECT_DIR$/target/classes/com/zgodnji/fifastatstracker/beans/GamesBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" afterPath="$PROJECT_DIR$/target/classes/config.yml" />
-      <change beforePath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar" afterPath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar" />
-      <change beforePath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar.original" afterPath="$PROJECT_DIR$/target/showLeaderboards-1.0.0.jar.original" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShowLeaderboardResource.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShowLeaderboardResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-196">
-              <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="37" />
+            <state relative-caret-position="462">
+              <caret line="67" column="54" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="2" lean-forward="false" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+            <state relative-caret-position="45">
+              <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -124,8 +117,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/beans/GamesBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java" />
       </list>
     </option>
   </component>
@@ -171,56 +165,6 @@
               <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
               <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fifastatstracker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fifastatstracker" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="showleaderboards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fifa-stats-tracker-showleaderboards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -233,7 +177,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fifa-stats-tracker-games" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fifa-stats-tracker-leaderboards" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
@@ -363,12 +307,12 @@
       <workItem from="1516302961821" duration="51000" />
       <workItem from="1516303382347" duration="1880000" />
       <workItem from="1516305719195" duration="16812000" />
-      <workItem from="1516323333766" duration="7496000" />
+      <workItem from="1516323333766" duration="8556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33333000" />
+    <option name="totallyTimeSpent" value="34393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="0" width="1890" height="1081" extended-state="6" />
@@ -451,14 +395,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -844,6 +780,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="2" lean-forward="false" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/GamesHealthCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -862,31 +816,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardProperties.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zgodnji/fifastatstracker/ShowLeaderboardResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="462">
+          <caret line="67" column="54" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="2" lean-forward="false" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>

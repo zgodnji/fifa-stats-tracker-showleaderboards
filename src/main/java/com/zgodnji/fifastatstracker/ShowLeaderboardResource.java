@@ -65,6 +65,7 @@ public class ShowLeaderboardResource {
     private ShowLeaderboardProperties properties;
 
     @GET
+    @Log(value = LogParams.METRICS, methodCall = false)
     @Path("{gameId}")
     public Response showLeaderboard(@PathParam("gameId") String gameId) {
 

@@ -10,25 +10,39 @@ kumuluzee:
   config:
     start-retry-delay-ms: 500
     max-retry-delay-ms: 900000
-  datasources:
-    - jndi-name: jdbc/CustomersDS
-      connection-url: jdbc:postgresql://localhost:5432/customers
-      username: postgres
-      password: postgres
-      max-pool-size: 20
   health:
     servlet:
       mapping: /health
       enabled: true
     logs:
-      enabled: true
+      enabled: false
       level: INFO
       period-s: 30
     checks:
       disk-space-health-check:
         threshold: 100000000
+  metrics:
+    servlet:
+      enabled: true
+      mapping: /metrics
+  fault-tolerance:
+    config:
+      watch-enabled: true
+      watch-properties: timeout.value,circuit-breaker.failure-ratio,bulkhead.value
+    games:
+      bulkhead:
+        value: 5
+      http-find-game:
+        timeout:
+          value: 10000ms
+        circuit-breaker:
+          request-threshold: 10
+          failure-ratio: 0.3
+          delay: 3000ms
+          metrics:
+            rolling-window:
+              size: 5s
+              buckets: 5
 
-rest-config:
-  string-property: Monday
-  boolean-property: true
-  integer-property: 23
+monthly:
+  game-of-the-month: 1

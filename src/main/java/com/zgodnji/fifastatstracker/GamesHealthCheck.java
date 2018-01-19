@@ -9,7 +9,6 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.logging.Logger;
 
 @Health
 @ApplicationScoped
@@ -18,8 +17,6 @@ public class GamesHealthCheck implements HealthCheck {
     @Inject
     @DiscoverService(value = "games-service", environment = "dev", version = "1.0.0")
     private String url;
-
-    private static final Logger LOG = Logger.getLogger(GamesHealthCheck.class.getSimpleName());
 
     @Override
     public HealthCheckResponse call() {
@@ -32,7 +29,6 @@ public class GamesHealthCheck implements HealthCheck {
                 return HealthCheckResponse.named(GamesHealthCheck.class.getSimpleName()).up().build();
             }
         } catch (Exception exception) {
-            LOG.severe(exception.getMessage());
         }
         return HealthCheckResponse.named(GamesHealthCheck.class.getSimpleName()).down().build();
     }

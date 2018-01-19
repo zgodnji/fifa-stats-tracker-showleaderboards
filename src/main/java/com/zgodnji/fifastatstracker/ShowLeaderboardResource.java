@@ -1,6 +1,12 @@
 package com.zgodnji.fifastatstracker;
 
 import com.kumuluz.ee.discovery.annotations.DiscoverService;
+import com.kumuluz.ee.logs.cdi.Log;
+import com.kumuluz.ee.logs.cdi.LogParams;
+import com.zgodnji.fifastatstracker.beans.GamesBean;
+import org.eclipse.microprofile.metrics.Meter;
+import org.eclipse.microprofile.metrics.Timer;
+import org.eclipse.microprofile.metrics.annotation.Metric;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
@@ -17,10 +23,12 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+
 @RequestScoped
-@Path("showleaderboards")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.TEXT_HTML)
+@Path("showleaderboards")
+@Log(LogParams.METRICS)
 public class ShowLeaderboardResource {
 
     @Inject
@@ -35,9 +43,33 @@ public class ShowLeaderboardResource {
     @DiscoverService(value = "users-service", environment = "dev", version = "1.0.0")
     private String usersUrlString;
 
+    @Inject
+    @Metric(name = "leaderboard_meter")
+    private Meter leaderboardMeter;
+
+    @Inject
+    @Metric(name = "leaderboard_timer")
+    private Timer leaderboardTimer;
+
     @GET
+    @Log(value = LogParams.METRICS, methodCall = false)
+    public Response showLeaderboards() {
+        return Response.noContent().build();
+    }
+
+    @Inject
+    private GamesBean gamesBean;
+
+
+    @Inject
+    private ShowLeaderboardProperties properties;
+
+    @GET
+    @Log(value = LogParams.METRICS, methodCall = false)
     @Path("{gameId}")
     public Response showLeaderboard(@PathParam("gameId") String gameId) {
+
+        leaderboardMeter.mark();
 
         String html = "<!DOCTYPE html>\n" +
                 "<html lang=\"en\">\n" +
@@ -49,36 +81,16 @@ public class ShowLeaderboardResource {
                 "    <div style=\"max-width: 900px; border: 1px black dashed; text-align: center\">\n" +
                 "        <div>\n" +
                 "            <h1>Leaderboard for ";
+        final Timer.Context context = leaderboardTimer.time();
+        html += gamesBean.getGameTitle(gameId);
+        context.stop();
+        html += "</h1>\n";
 
-        StringBuilder game = new StringBuilder();
-
-        try {
-            URL url = new URL(gamesUrlString + "/v1/games/" + gameId);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
-            conn.setRequestProperty("Accept", "application/json");
-            if (conn.getResponseCode() != 200) {
-                throw new RuntimeException("Failed : HTTP error code : "
-                        + conn.getResponseCode());
-            }
-            BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
-            String output;
-            while ((output = br.readLine()) != null) {
-                game.append(output);
-            }
-            conn.disconnect();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        if(properties.getGameOfTheMonth().equals(gameId)) {
+            html += "<h2>This is the game of the month!</h2>";
         }
 
-        Object objG = JSONValue.parse(game.toString());
-        JSONObject gameObj = (JSONObject) objG;
-
-        html += gameObj.get("title");
-        html += "</h1>\n" +
-                "            <ol>\n";
+        html += "            <ol>\n";
 
         StringBuilder response = new StringBuilder();
 
@@ -148,4 +160,6 @@ public class ShowLeaderboardResource {
         // Get
         return Response.ok(html).build();
     }
+
+
 }
